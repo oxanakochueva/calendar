@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calendar</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/reset.css">
+</head>
+<body>
+  <section id="info">
+    <p>Здесь должен быть текст, объясняющий что я вообще тут натворила, а пока В период всего срока нахождения Вашего оборудования в сервисном центре, Вы имеете возможность самостоятельно знакомиться с информацией. Также, если Вы предоставили адрес электроной почты, Вам будут приходить соответствующие уведомления. Итогом окончания всех сервисных действий будет СМС (или VIBER) оповещение на предоставленный Вами номер мобильного телефона.</p>
+    <button v-on:click="close">Понятно</button>
+  </section>
+  <section id="app">
+    <div id="calendar">
+      <h1>{{ header }}</h1>
+    </div>
+    <div id="popover"></div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="javascripts/javascript.js"></script>
+</body>
+</html>
